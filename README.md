@@ -1,4 +1,6 @@
-in the init component the scene and camera location are created, there is also the main tick function in which the scene is animated
-all combat logic is in the createArmies component
-there, two armies are created and there is also a function for practicing attack combat, which also includes the removal of a “killed unit”
-all characteristics of the army and a specific unit are located in the characteristics folder
+
+In the initialization component, the scene and camera settings are established, along with the main tick function responsible for animating the scene.
+
+All combat logic resides in the createArmies component. Here, two armies are generated, and there's a function for executing combat attacks, which also handles the removal of "eliminated units."
+
+All characteristics pertaining to the armies and individual units are located within the characteristics folder.
