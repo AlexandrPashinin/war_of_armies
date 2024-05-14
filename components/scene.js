@@ -1,10 +1,12 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { createArmies } from './UnitLogic.js';
+import Stats from 'three/examples/jsm/libs/stats.module.js';
 
 export default function Scene() {
   let camera, scene, renderer, controls;
-
+  const stats = new Stats();
+  document.body.appendChild(stats.dom);
   init();
 
   function init() {
@@ -37,11 +39,11 @@ export default function Scene() {
     render();
     tick();
   }
-
   function tick() {
     renderer.render(scene, camera);
     window.requestAnimationFrame(tick);
     createArmies(scene);
+    stats.update();
   }
 
   function onWindowResize() {
