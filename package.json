@@ -1,10 +1,10 @@
 {
   "devDependencies": {
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "@vitejs/plugin-react": "^4.2.1"
   },
   "dependencies": {
     "@tweenjs/tween.js": "^23.1.2",
-    "@vitejs/plugin-react": "^4.2.1",
     "stats.js": "^0.17.0",
     "three": "^0.164.1"
   }
