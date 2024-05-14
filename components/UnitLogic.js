@@ -83,7 +83,7 @@ function attack(attacker, target) {
   if (attacker.attackCooldownTimer === 0) {
     target.health -= attackDamage;
     attacker.attackCooldownTimer = attackCooldown;
-    console.log(`Куб армии  атакует! Здоровье цели: ${target.health}`);
+    console.log(`The Army Cube is attacking! Target's health: ${target.health}`);
     if (target.health <= 0) {
       scene.remove(target.cube);
       army1 = army1.filter(unit => unit.cube !== target.cube);
