@@ -53,5 +53,6 @@ export default function Scene() {
 
   function render() {
     renderer.render(scene, camera);
+
   }
 }
