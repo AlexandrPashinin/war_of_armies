@@ -14,7 +14,7 @@ export function createArmies(sceneRef) {
 
     const loader = new GLTFLoader();
     loader.load(
-        '/modal/Horse.glb',
+        '/public/Horse.glb',
         (gltf) => {
             model = gltf.scene;
             mixer = new THREE.AnimationMixer(model);
